@@ -174,3 +174,51 @@ h1, h2, h3 {
 	margin: 0 10px;
 	color: #000;
 }
+<head>
+  <!-- 原有代码保持不变 -->
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  <!-- 新增：直接在HTML中添加自定义CSS -->
+  <style>
+    /* 强制图片容器为正方形 */
+    .hovereffect {
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* 图片自适应正方形容器 */
+    .portfolio-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    /* 修复hover覆盖层的位置 */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.5);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .hovereffect:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay-text {
+      color: white;
+      font-size: 1rem;
+    }
+  </style>
+  
+  <!-- 原有代码保持不变 -->
+</head>
