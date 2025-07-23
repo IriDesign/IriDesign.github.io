@@ -1,9 +1,10 @@
-body {
-	font-family: 'Open Sans', sans-serif;
-}
 .navbar-nav .nav-link {
     text-transform: none;
 }
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
 
 form {
 	max-width: 500px;
