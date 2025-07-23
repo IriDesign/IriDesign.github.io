@@ -1,6 +1,9 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+.navbar-nav .nav-link {
+    text-transform: none;
+}
 
 form {
 	max-width: 500px;
