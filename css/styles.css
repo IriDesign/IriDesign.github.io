@@ -92,7 +92,7 @@ h1, h2, h3 {
 
 .portfolio-img {
 	width: 100%;
-	max-height: 250px;
+	/* 删掉这行：max-height: 250px; */
 	display: block;
 	object-fit: cover;
 }
